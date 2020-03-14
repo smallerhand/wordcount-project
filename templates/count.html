@@ -1,3 +1,8 @@
 <h1>COUNT: {{count}}</h1>
 
-<h1>{{ name }}, welcome to Tobii!</h1>
+<h1>Wordcount</h1>
+
+{% for word, counttotal in sortedwords %}
+  {{ word }} - {{ counttotal }}
+<br />
+{% endfor %}
