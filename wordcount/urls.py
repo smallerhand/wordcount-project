@@ -20,6 +20,7 @@ from . import views
 urlpatterns = [
     path('smallhand/', admin.site.urls),
     path('', views.homepage),
-    path('eggs', views.eggs)
+    path('eggs', views.eggs),
+    path('count/', views.count, name='count')
 
 ]
